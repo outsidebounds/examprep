@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подготовка к экзаменам</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>English Hub</h1>
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#groups">Ресурсы для подготовки</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Сэкономь себе нервы и время</h2>
+        <p>Все полезные сайты в одном месте</p>
+    </div>
+</section>
+
+<section id="groups" class="groups">
+
+    <div class="group" onclick="toggle(this)">
+        <h3>📚 Лексика</h3>
+        <div class="links">
+            <a href="https://quizlet.com/ru&quot; target="_blank">Quizlet</a>
+            <a href="https://www.memrise.com/&quot; target="_blank">Memrise</a>
+            <a href="https://context.reverso.net/&quot; target="_blank">Reverso Context</a>
+        </div>
+    </div>
+
+    <div class="group" onclick="toggle(this)">
+        <h3>✍️ Грамматика</h3>
+        <div class="links">
+            <a href="https://www.youtube.com/@BrianWilesOfficial&quot; target="_blank">Brian Wiles</a>
+            <a href="https://www.britishcouncil.org/&quot; target="_blank">British Council</a>
+            <a href="https://lingualeo.com/ru&quot; target="_blank">LinguaLeo</a>
+        </div>
+    </div>
+
+    <div class="group" onclick="toggle(this)">
+        <h3>🎧 Аудирование</h3>
+        <div class="links">
+            <a href="https://www.youtube.com/bbclearningenglish&quot; target="_blank">BBC Learning English</a>
+            <a href="https://www.youtube.com/@SpeakEnglishWithClass&quot; target="_blank">Speak English With Class</a>
+        </div>
+    </div>
+
+    <div class="group" onclick="toggle(this)">
+        <h3>📖 Чтение</h3>
+        <div class="links">
+            <a href="https://www.newsinlevels.com/&quot; target="_blank">News in Levels</a>
+        </div>
+    </div>
+
+    <div class="group" onclick="toggle(this)">
+        <h3>📝 Письмо</h3>
+        <div class="links">
+            <a href="https://www.grammarly.com/&quot; target="_blank">Grammarly</a>
+            <a href="https://pixelfox.ai/ru/text/tools-essay-checker&quot; target="_blank">Essay Checker</a>
+        </div>
+    </div>
+
+    <div class="group" onclick="toggle(this)">
+        <h3>🗣 Говорение</h3>
+        <div class="links">
+            <a href="https://puzzle-english.com/&quot; target="_blank">Puzzle English</a>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 English Hub | Пользуйьтесь с удовольствием 💙</p>
+</footer>
+
+<script>
+function toggle(element) {
+    document.querySelectorAll(".group").forEach(el => {
+        if (el !== element) el.classList.remove("active");
+    });
+
+    element.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
